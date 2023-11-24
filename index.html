@@ -3,140 +3,315 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Montserrat:wght@300;400&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="static/css/style.css">
     <title>WebShop</title>
 </head>
 <body>
+    <!--Search modal-->
+    <aside class="modal fade" id="NavbarSearch" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <form>
+              <div class="form-group has-search">
+                  <span class="form-control-feedback">
+                      <i class="bi bi-search"></i>
+                  </span>
+                  <input type="text" name="query" class="form-control rounded-pill" placeholder="Поиск" value="">
+              </div>
+            </form>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="text-secondary"><i class="bi bi-search search-line-icon mx-1"></i>Трусы</p>
+            <p class="text-secondary"><i class="bi bi-search search-line-icon mx-1"></i>Носки</p>
+            <p class="text-secondary"><i class="bi bi-search search-line-icon mx-1"></i>Подтяжки</p>
+            <p class="text-secondary"><i class="bi bi-search search-line-icon mx-1"></i>...</p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <!--End search modal-->
+
     <!--Telephone-->
-    <!--Top Nav fixed-->
-    <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-primary d-md-none">
-        <div class="container">
-            <a href="#" class="navbar-brand text-white">Brand</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link active" aria-current="page">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Link</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div class="container p-0">
+      <!--Top Nav fixed-->
+      <nav class="navbar sticky-top navbar-dark bg-primary d-md-none">
+          <div class="container">
+              <a href="#" class="navbar-brand text-white">Brand</a>
+              <a href="" class="button navbar-barnd text-white" data-bs-toggle="modal" data-bs-target="#NavbarSearch">
+                <i class="bi bi-search"></i>
+              </a>
+          </div>
+      </nav>
 
-    <!--Carousel-->
-    <div class="container-fluid py-2">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="media/mountains.jpg" class="d-block w-100" alt="...">
+      <!--Carousel-->
+      <div class="container-fluid py-2">
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="media/mountains.jpg" class="d-block w-100 carousel-image-mobile" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="media/run.jpg" class="d-block w-100 carousel-image-mobile" alt="...">
+                </div>
               </div>
-              <div class="carousel-item">
-                <img src="media/run.jpg" class="d-block w-100" alt="...">
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+          </div>
+      </div>
+
+      <!--Goods-->
+      <div class="container-fluid d-md-none mb-5 px-0">
+          <div class="row px-1 g-1">
+            <div class="col-6">
+              <div class="card">
+                <div class="overlay">
+                  <a href="#" class="product-like-container">
+                    <b><i class="bi bi-heart"></i></b>
+                  </a>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <img src="/media/oboi.webp" class="card-img-top product-image" alt="...">
+                  </div>
+                </div>
+                <div class="row p-1 m-0">
+                  <div class="col-12">
+                    <div class="d-flex justyfy-content-start">
+                      <b class="pe-1">346 &#8381;</b>
+                      <s class="text-secondary"><small>450 &#8381;</small></s>
+                    </div>
+                  </div>
+                </div>
+                <div class="row p-1 mt-0">
+                  <div class="col-12">
+                    <div class="text-truncate product-name">Краска Текс латексная 1,5л</div>
+                  </div>
+                </div>
+                <div class="row p-1">
+                  <div class="col-12">
+                    <div class="text-truncate product-description"><small>Some quick example text to build on the card title and make up the bulk of the card's content.</small></div>
+                  </div>
+                </div>
+                <div class="d-flex text-secondary justify-content-start p-1">
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    4.7
+                  </div>
+                  <div class="stars">
+                    &#x2022; 3224 оценок
+                  </div>
+                </div>
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-        </div>
+            <div class="col-6">
+                <div class="card">
+                  <div class="overlay">
+                    <a href="#" class="product-like-container">
+                      <b><i class="bi bi-heart-fill"></i></b>
+                    </a>
+                  </div>
+                  <div class="d-flex">
+                    <div class="col-12">
+                      <img src="/media/oboi.webp" class="card-img-top product-image" alt="...">
+                    </div>
+                  </div>
+                  <div class="d-flex p-1">
+                    <div class="col-12">
+                      <div class="d-flex justyfy-content-start">
+                        <b class="pe-1">346 &#8381;</b>
+                        <s class="text-secondary"><small>450 &#8381;</small></s>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex p-1">
+                    <div class="col-12">
+                      <h6 class="card-title text-truncate product-name">Краска Текс латексная 1,5л</h6>
+                    </div>
+                  </div>
+                  <div class="d-flex p-1">
+                    <div class="col-12">
+                      <div class="text-truncate text-secondary product-description"><small>Some quick example text to build on the card title and make up the bulk of the card's content.</small></div>
+                    </div>
+                  </div>
+                  <div class="d-flex text-secondary justify-content-start p-1">
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      4.7
+                    </div>
+                    <div class="stars">
+                      &#x2022; 3224 оценок
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-6">
+              <div class="container product-container border p-1">
+                <div class="overlay">
+                  <a href="#" class="product-like-container">
+                    <b><i class="bi bi-heart"></i></b>
+                  </a>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <img src="/media/14370.jpeg" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="d-flex justyfy-content-start">
+                      <b class="pe-1">346 &#8381;</b>
+                      <s class="text-secondary"><small>450 &#8381;</small></s>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <h6 class="card-title text-truncate product-name">Краска Текс латексная 1,5л</h6>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="text-truncate text-secondary product-description"><small>Some quick example text to build on the card title and make up the bulk of the card's content.</small></div>
+                  </div>
+                </div>
+                <div class="d-flex text-secondary justify-content-start">
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    4.7
+                  </div>
+                  <div class="stars">
+                    &#x2022; 3224 оценок
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="container product-container border p-1">
+                <div class="overlay">
+                  <a href="#" class="product-like-container-active">
+                    <b><i class="bi bi-heart-fill"></i></b>
+                  </a>
+                </div>
+                <div class="d-flex">
+                  <div class="col-12">
+                    <img src="/media/14370.jpeg" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <div class="col-12">
+                    <div class="d-flex justyfy-content-start">
+                      <b class="pe-1">346 &#8381;</b>
+                      <s class="text-secondary"><small>450 &#8381;</small></s>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <div class="col-12">
+                    <h6 class="card-title text-truncate product-name">Краска Текс латексная 1,5л</h6>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <div class="col-12">
+                    <div class="text-truncate text-secondary product-description"><small>Some quick example text to build on the card title and make up the bulk of the card's content.</small></div>
+                  </div>
+                </div>
+                <div class="d-flex text-secondary justify-content-start">
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    4.7
+                  </div>
+                  <div class="stars">
+                    &#x2022; 3224 оценок
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="container border p-1">
+                <div class="row">
+                  <div class="col-12">
+                    <img src="/media/14370.jpeg" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="d-flex justyfy-content-start">
+                      <b class="pe-1">346 &#8381;</b>
+                      <s class="text-secondary"><small>450 &#8381;</small></s>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <h6 class="card-title text-truncate product-name">Краска Текс латексная 1,5л</h6>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="text-truncate text-secondary product-description"><small>Some quick example text to build on the card title and make up the bulk of the card's content.</small></div>
+                  </div>
+                </div>
+                <div class="d-flex text-secondary justify-content-start">
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    4.7
+                  </div>
+                  <div class="stars">
+                    &#x2022; 3224 оценок
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <!--Bottom nav fixed-->
+      <nav class="navbar sticky-bottom navbar-dark bg-primary d-md-none">
+          <div class="container">
+              <div class="row">
+                <div class="col">
+                  <a href="#" class="navbar-brand bottom-icons">
+                    <i class="bi bi-house"></i>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="#" class="navbar-brand bottom-icons">
+                    <i class="bi bi-house"></i>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="#" class="navbar-brand bottom-icons">
+                    <i class="bi bi-house"></i>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="#" class="navbar-brand bottom-icons">
+                    <i class="bi bi-house"></i>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="#" class="navbar-brand bottom-icons">
+                    <i class="bi bi-house"></i>
+                  </a>
+                </div>
+              </div>
+          </div>
+      </nav>
+      <!--End Telephone-->
     </div>
-
-    <!--Goods-->
-    <div class="container-fluid d-md-none">
-        <div class="row">
-            <div class="col-6 mb-2">
-                <div class="card">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">An item</li>
-                      <li class="list-group-item">A second item</li>
-                      <li class="list-group-item">A third item</li>
-                    </ul>
-                    <div class="card-body">
-                      <a href="#" class="card-link">Card link</a>
-                      <a href="#" class="card-link">Another link</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 mb-2">
-                <div class="card">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">An item</li>
-                      <li class="list-group-item">A second item</li>
-                      <li class="list-group-item">A third item</li>
-                    </ul>
-                    <div class="card-body">
-                      <a href="#" class="card-link">Card link</a>
-                      <a href="#" class="card-link">Another link</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 mb-2">
-                <div class="card">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">An item</li>
-                      <li class="list-group-item">A second item</li>
-                      <li class="list-group-item">A third item</li>
-                    </ul>
-                    <div class="card-body">
-                      <a href="#" class="card-link">Card link</a>
-                      <a href="#" class="card-link">Another link</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 mb-2">
-                <div class="card">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">An item</li>
-                      <li class="list-group-item">A second item</li>
-                      <li class="list-group-item">A third item</li>
-                    </ul>
-                    <div class="card-body">
-                      <a href="#" class="card-link">Card link</a>
-                      <a href="#" class="card-link">Another link</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--Bottom nav fixed-->
-    <nav class="navbar fixed-bottom navbar-dark bg-primary d-md-none">
-        <div class="container-fluid">
-            <a href="#" class="navbar-brand text-white">Brand</a>
-        </div>
-    </nav>
-    <!--End Telephone-->
-
 
 
     <!--Computer-->

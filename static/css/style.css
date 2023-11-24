@@ -1,3 +1,108 @@
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+.product-name {
+    letter-spacing: -1px;
+}
+
+.product-description {
+    letter-spacing: -0.5px;
+}
+
+.product-image {
+    border-radius: 5%;
+}
+
+.product-like {
+    position: absolute;
+    cursor: pointer;
+    left: 80%;
+    top: 2%;
+    height: 100%; width: 100%;
+    font-size: 1.3rem;
+    color: black;
+}
+
+.product-container {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: .3s ease;
+    background-color: transparent;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.product-like-container {
+    position: absolute;
+    cursor: pointer;
+    left: 85%;
+    top: 0%;
+    font-size: 1.3rem;
+    color: black;
+}
+
+.product-like-container-active {
+    position: absolute;
+    cursor: pointer;
+    left: 85%;
+    top: 0%;
+    font-size: 1.3rem;
+    color: red;
+}
+
+.product-like-active {
+    position: absolute;
+    cursor: pointer;
+    left: 80%;
+    top: 2%;
+    height: 100%; width: 100%;
+    font-size: 1.3rem;
+    color: black;
+}
+
+
+.product-like a {
+    color: black;
+}
+
+.stars {
+    font-size: 0.7rem;
+}
+
+.bottom-icons {
+    font-size: 1.0rem;
+}
+
+.search-line-icon {
+    font-size: 0.8rem;
+}
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+    border: none;
+    background-color: #F5F5F5;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
 .header-big {
     height: 300px !important;
     background-color: blueviolet;
@@ -5,4 +110,8 @@
 
 .header-small {
     background-color: blue;
+}
+
+.carousel-image-mobile {
+    height: 100px;
 }
