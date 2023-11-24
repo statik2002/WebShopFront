@@ -1,0 +1,8 @@
+.header-big {
+    height: 300px !important;
+    background-color: blueviolet;
+}
+
+.header-small {
+    background-color: blue;
+}
