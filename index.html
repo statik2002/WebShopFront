@@ -39,9 +39,9 @@
     <!--End search modal-->
 
     <!--Telephone-->
-    <div class="container p-0">
+    <div class="container p-0 d-md-none">
       <!--Top Nav fixed-->
-      <nav class="navbar sticky-top navbar-dark bg-primary d-md-none">
+      <nav class="navbar sticky-top navbar-dark bg-primary">
           <div class="container">
               <a href="#" class="navbar-brand text-white">Brand</a>
               <a href="" class="button navbar-barnd text-white" data-bs-toggle="modal" data-bs-target="#NavbarSearch">
@@ -73,7 +73,7 @@
       </div>
 
       <!--Goods-->
-      <div class="container-fluid d-md-none mb-5 px-0">
+      <div class="container-fluid mb-5 px-0">
           <div class="row px-1 g-1">
             <div class="col-6">
               <div class="card">
@@ -279,7 +279,7 @@
       </div>
 
       <!--Bottom nav fixed-->
-      <nav class="navbar sticky-bottom navbar-dark bg-primary d-md-none">
+      <nav class="navbar sticky-bottom navbar-dark bg-primary">
           <div class="container">
               <div class="row">
                 <div class="col">
@@ -315,11 +315,86 @@
 
 
     <!--Computer-->
-    <header class="p-3 d-none d-md-block header-big">
-        <div class="container">
-
+    <div class="container-fluid d-none d-md-block p-0">
+      <ul class="nav flex-column bg-primary">
+        <div class="container-fluid">
+          <div class="d-flex flex-row p-1">
+            <div class="p-2">Home</div>
+            <div class="p-2">Cart</div>
+            <div class="p-2">cabinet</div>
+          </div>
         </div>
-    </header>
+        <li class="nav-item">
+          <div class="container-fluid p-0">
+            <nav class="navbar navbar-dark bg-primary d-flex" aria-label="Fifth navbar example">
+              <div class="container-fluid">
+                <div class="d-flex flex-row">
+                  <div class="flex-shrink-1 p-2">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  </div>
+                  <div class="">
+                    <div class="collapse navbar-collapse" id="navbarsExample05">
+                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                          <ul class="dropdown-menu" aria-labelledby="dropdown05">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <form>
+                        <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                      </form>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 p-2">
+                    <form>
+                      <div class="form-group has-search">
+                          <span class="form-control-feedback">
+                              <i class="bi bi-search"></i>
+                          </span>
+                          <input type="text" name="query" class="form-control rounded-pill" placeholder="Поиск" value="">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="flex-shrink-1 p-2">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col">
+                          Адреса
+                        </div>
+                        <div class="col">
+                          Войти
+                        </div>
+                        <div class="col">
+                          Корзина
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              </div>
+            </nav>
+          </div>
+        </li>
+        <li class="nav-item">
+          <p>Oher nav element</p>
+        </li>
+      </ul>
+    </div>
 
     <script src="static/js/bootstrap.min.js"></script>
 </body>

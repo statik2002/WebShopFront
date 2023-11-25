@@ -105,6 +105,7 @@
 
 .header-big {
     height: 300px !important;
+    width: 100%;
     background-color: blueviolet;
 }
 
