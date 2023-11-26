@@ -395,13 +395,13 @@
                 <div class="container">
                   <div class="row menu1">
                     <div class="col">
-                      <a href="#"><i class="bi bi-person-circle" style="font-size: 1.5rem;"></i></a>
+                      <a href="#" data-bs-toggle="tooltip" data-bs-title="Cabinet"><i class="bi bi-person-circle" style="font-size: 1.5rem;"></i></a>
                     </div>
                     <div class="col">
-                      <a href="#"><i class="bi bi-bag" style="font-size: 1.5rem;"></i></a>
+                      <a href="#" data-bs-toggle="tooltip" data-bs-title="Your cart"><i class="bi bi-bag" style="font-size: 1.5rem;"></i></a>
                     </div>
                     <div class="col">
-                      <a href="#"><i class="bi bi-heart" style="font-size: 1.5rem;"></i></a>
+                      <a href="#" data-bs-toggle="tooltip" data-bs-title="Your likes"><i class="bi bi-heart" style="font-size: 1.5rem;"></i></a>
                     </div>
                   </div>
                 </div>
@@ -849,6 +849,11 @@
       <!--Footer end-->
     </div>
 
+    <script src="static/js/popper.min.js"></script>
     <script src="static/js/bootstrap.min.js"></script>
+    <script>
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
 </body>
 </html>
