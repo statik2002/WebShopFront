@@ -1,5 +1,10 @@
 * {
-    font-family: 'Lato', sans-serif;
+    /*font-family: 'Oswald', sans-serif;*/
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    font-weight: 700;
 }
 
 .product-name {
@@ -72,8 +77,23 @@
     color: black;
 }
 
+.product-property {
+    overflow: hidden;
+}
+
+.product-property:after {
+    content:'........................................................';
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
 .stars {
     font-size: 0.7rem;
+}
+
+.product-stars {
+    font-size: 1.0rem;
 }
 
 .bottom-icons {
