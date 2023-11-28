@@ -13,13 +13,165 @@
 </head>
 <body>
 
+  <!--Telephone-->
+  <!--End Telephone-->
 
+  <!--Desktop-->
+  <!--Off Canvas with catalog-->
+  <aside class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Catalog</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="row">
+        <div class="col">
+          <a href="#">First catalog item</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <a href="#">Second catalog item</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <a href="#">Third catalog item</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <a href="#">Fourth catalog item</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <a href="#">Fifth catalog item</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <a href="#">Sixth catalog item</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <!--end Off Canvas-->
+
+  <div class="container-fluid d-none d-md-block p-0">
+    <!--Top Navbar-->
+    <ul class="nav flex-column bg-dark" style="background-image: url('media/run.jpg');">
+      <!--Top line of links-->
+      <li class="nav-item">
+        <ul class="nav">
+          <li class="nav-link menu1">
+            <a href="#">&#8226; One</a>
+          </li>
+          <li class="nav-link menu1">
+            <a href="#">&#8226; Two</a>
+          </li>
+          <li class="nav-link menu1">
+            <a href="#">&#8226; Three</a>
+          </li>
+        </ul>
+      </li>
+      <!--Middle navbar-->
+      <li class="nav-item">
+        <div class="container-fluid p-1">
+          <div class="row mx-2">
+            <!--Off canvas button-->
+            <div class="col-md-auto text-light">
+              <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <i class="bi bi-list"></i>
+              </button>
+            </div>
+            <div class="col">
+              <form>
+                <div class="form-group has-search opacity-50">
+                    <span class="form-control-feedback">
+                        <i class="bi bi-search"></i>
+                    </span>
+                    <input type="text" name="query" class="form-control rounded-pill" placeholder="Поиск" value="">
+                </div>
+              </form>
+            </div>
+            <div class="col-md-auto">
+              <div class="container">
+                <div class="row menu1">
+                  <div class="col">
+                    <a href="#" data-bs-toggle="tooltip" data-bs-title="Cabinet"><i class="bi bi-person-circle" style="font-size: 1.5rem;"></i></a>
+                  </div>
+                  <div class="col">
+                    <a href="#" data-bs-toggle="tooltip" data-bs-title="Your cart"><i class="bi bi-bag" style="font-size: 1.5rem;"></i></a>
+                  </div>
+                  <div class="col">
+                    <a href="#" data-bs-toggle="tooltip" data-bs-title="Your likes"><i class="bi bi-heart" style="font-size: 1.5rem;"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <!--Bottom nav element-->
+      <li class="nav-item">
+        <div class="container-fluid text-light">
+          <div class="p-2">
+            Other nav element
+          </div>
+        </div>
+      </li>
+    </ul>
+    <!--End top navbar-->
+
+    <div class="container">
+      <!--Cabinet content-->
+        <!--Main Navbar-->
+          <nav class="navbar navbar-expand navbar-light mb-5">
+              <div class="container-fluid">
+                    <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house"></i> Главная</a>
+                    <a class="nav-link" href="#"><i class="bi bi-heart"></i> Избранное</a>
+                    <a class="nav-link" href="#"><i class="bi bi-bag"></i> Мои покупки</a>
+                    <a class="nav-link" href="#"><i class="bi bi-chat-left-text"></i> Мои обращения</a>
+                    <a class="nav-link" href="#"><i class="bi bi-star"></i> Мои отзывы и вопросы</a>
+                    <a class="nav-link" href="#"><i class="bi bi-person"></i> Мои профиль</a>
+              </div>
+          </nav>
+        <!--End Main Navbar-->
+
+        <!--Widges area-->
+        <div class="row mb-5">
+          <!--Persona-->
+          <div class="col">
+            <div class="container shadow-sm rounded-3">
+              <div class="row">
+                <div class="col">Avatar</div>
+                <div class="col"></div>
+              </div>
+              <div class="row">
+                <div class="col">Telephone</div>
+                <div class="col">Logout</div>
+              </div>
+            </div>
+          </div>
+          <!--Orders-->
+          <div class="col"></div>
+          <!--Discount-->
+          <div class="col"></div>
+        </div>  
+        <!--End widgets area-->
+
+
+      <!--End cabinet content-->
+    </div>
+  </div>
+  <!--End Desktop-->
     
-    <script src="static/js/popper.min.js"></script>
-    <script src="static/js/bootstrap.min.js"></script>
-    <script>
-      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-    </script>
+  <script src="static/js/popper.min.js"></script>
+  <script src="static/js/bootstrap.min.js"></script>
+  <script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+  </script>
 </body>
 </html>
