@@ -20,6 +20,47 @@
   <!--End telephone-->
 
   <!--Desktop-->
+  <!--Off Canvas-->
+  <aside class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Catalog</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="row">
+        <div class="col">
+          <a href="#">First catalog item</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <a href="#">Second catalog item</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <a href="#">Third catalog item</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <a href="#">Fourth catalog item</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <a href="#">Fifth catalog item</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <a href="#">Sixth catalog item</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <!--end Off Canvas-->
+  
   <div class="container-fluid d-none d-md-block p-0">
     <!--Header-->
     <ul class="nav flex-column bg-dark" style="background-image: url('media/run.jpg');">
@@ -92,16 +133,16 @@
       <nav class="mt-3 mx-1 -bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
         <div class="row">
           <ol class="col d-flex breadcrumb">
-            <li class="mx-3"><a href="#"><i class="bi bi-arrow-left"></i></a></li>
+            <li class="mx-3"><a href="#" link-secondary><i class="bi bi-arrow-left"></i></a></li>
             <li class="breadcrumb-item"><a href="#">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page"><a href="#">Library</a></li>
             <li class="breadcrumb-item active" aria-current="page"><a href="#">Book</a></li>
           </ol>
           <div class="col d-flex justify-content-end">
-            <div class="m-1">
+            <div class="breadcrumb-icon m-1">
               <a href="#"><i class="bi bi-exclamation-square"></i></a>
             </div>
-            <div class="m-1">
+            <div class="breadcrumb-icon m-1">
               <a href="#"><i class="bi bi-share"></i></a>
             </div>
           </div>
@@ -203,7 +244,7 @@
           <div class="row my-3">
             <div class="col-10">
               <div class="d-grid">
-                <button type="button" class="btn btn-primary">Add to cart  <i class="bi bi-cart"></i></button>
+                <button type="button" class="btn btn-primary">Добавить в корзину  <i class="bi bi-cart"></i></button>
               </div>
             </div>
             <div class="col-2">
@@ -390,6 +431,7 @@
     
   <script src="static/js/popper.min.js"></script>
   <script src="static/js/bootstrap.min.js"></script>
+  <script src="static/js/main.js"></script>
   <script>
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
