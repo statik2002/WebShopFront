@@ -1,6 +1,7 @@
 * {
     /*font-family: 'Oswald', sans-serif;*/
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    /*font-family: 'Roboto', sans-serif;*/
 }
 
 h2 {
@@ -73,8 +74,21 @@ h2 {
     color: black;
 }
 
+.product-like-container:hover {
+    color: red;
+    font-size: 32px;
+}
+
 .product-like a {
     color: black;
+}
+
+.product-like a:visited {
+    color: black;
+}
+
+.product-like a:hover {
+    color: red;
 }
 
 .product-property {
