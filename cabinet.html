@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Montserrat:wght@300;400&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="static/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="static/css/style.css">
@@ -127,7 +127,7 @@
     <div class="container widget-area">
       <!--Cabinet content-->
         <!--Main Navbar-->
-          <nav class="navbar navbar-expand navbar-light">
+          <nav class="navbar navbar-expand navbar-light mb-5">
               <div class="container-fluid">
                     <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house"></i> Главная</a>
                     <a class="nav-link" href="#"><i class="bi bi-heart"></i> Избранное</a>
@@ -140,33 +140,37 @@
         <!--End Main Navbar-->
 
         <!--Widges area-->
-        <div class="row mb-5 mt-3">
+        <div class="row mb-5">
           <div class="row">
             <!--Persona-->
             <div class="col-4">
-              <div class="widget p-3 h-100">
-                <div class="d-flex flex-column justify-content-between h-100">
+              <div class="widget p-2 h-100">
+                <div class="d-flex flex-column justify-content-start h-100">
                   <div class="row">
                     <div class="col-auto">
-                      <img src="media/avatar.webp" alt="avatar" class="img-fluid rounded-circle" width="100" height="100">
+                      <div class="border"><img src="media/avatar.webp" alt="avatar" class="img-fluid rounded-circle" width="100" height="100"></div>
                     </div>
                     <div class="col">
-                      Your Name Surname Middle name
+                      <div class="border">Your Name Surname Middle name</div>
                     </div>
-                    <div class="col-auto">
-                      <a href="#"><i class="bi bi-bell"></i></a>
+                    <div class="col">
+                      <div class="border ms-auto"><a href="#"><i class="bi bi-bell"></i></a></div>
                     </div>
                   </div>
-                  <div class="d-flex justify-content-between pt-2">
-                    <div class=""><span class="text-secondary">Телефон</span> +7 999 888 77 66</div>
-                    <div class=""><a href="#">Выйти</a></div>
+                  <div class="row">
+                    <div class="col">
+                      <div class="border"><span class="text-secondary">Телефон</span> +7 999 888 77 66</div>
+                    </div>
+                    <div class="col">
+                      <div class="border ms-auto"><a href="#">Выйти</a></div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
             <!--Orders-->
             <div class="col-4">
-              <div class="widget p-3 h-100">
+              <div class="widget p-2 h-100">
                 <div class="d-flex flex-column justify-content-between h-100">
                   <div class="">
                     <div class="row">
@@ -178,7 +182,7 @@
                         </div>
                       </div>
                       <div class="col align-self-center">
-                        <span class="h4">Заказы</span>
+                        <span class="">Заказы</span>
                       </div>
                     </div>
                   </div>
@@ -191,7 +195,7 @@
             </div>
             <!--Discount-->
             <div class="col-4">
-              <div class="widget p-3 h-100">
+              <div class="widget p-2 h-100">
                 <div class="d-flex flex-column justify-content-between h-100">
                   <div class="">
                     <div class="row">
@@ -216,61 +220,53 @@
           <div class="row mt-3">
             <!--Payment-->
             <div class="col-3">
-              <div class="widget p-3">
+              <div class="widget p-4">
                 <div class="row">
-                  <div class="col h5">Ваша карта</div>
-                  <div class="d-flex justify-content-start">
-                    <div class=""><i class="bi bi-credit-card"></i></div>
-                    <div class="ms-2">7777 7777 7777 7777</div>
-                  </div>
+                  <div class="row">Ваша карта</div>
+                  <div class="col border"><i class="bi bi-credit-card"></i></div>
+                  <div class="col-auto border">7777 7777 7777 7777</div>
                 </div>
                 <div class="row mt-4">
-                  <div class="col-auto"><a href="#">Добавить карту</a></div>
+                  <div class="col-auto border"><a href="#">Добавить карту</a></div>
                 </div>
               </div>
             </div>
             <!--Balance-->
             <div class="col-3">
-              <div class="widget p-3">
+              <div class="widget p-4">
                 <div class="row">
-                  <div class="h5">Ваш баланс</div>
-                  <div class="d-flex">
-                    <div class=""><i class="bi bi-cash-stack"></i></div>
-                    <div class="ms-2">3450 &#8381;</div>
-                  </div>
+                  <div class="row">Ваша карта</div>
+                  <div class="col border"><i class="bi bi-credit-card"></i></div>
+                  <div class="col-auto border">7777 7777 7777 7777</div>
                 </div>
                 <div class="row mt-4">
-                  <div class="col"><a href="#">Пополнить баланс</a></div>
+                  <div class="col-auto border"><a href="#">Добавить карту</a></div>
                 </div>
               </div>
             </div>
             <!--History payment-->
             <div class="col-3">
-              <div class="widget p-3">
+              <div class="widget p-4">
                 <div class="row">
-                  <div class="h5">История заказов</div>
-                  <div class="d-flex">
-                    <div class="">Последний</div>
-                    <div class="ms-2">27 октября 2023г.</div>
-                  </div>
+                  <div class="row">Ваша карта</div>
+                  <div class="col border"><i class="bi bi-credit-card"></i></div>
+                  <div class="col-auto border">7777 7777 7777 7777</div>
                 </div>
                 <div class="row mt-4">
-                  <div class="col-auto"><a href="#">Все заказы</a></div>
+                  <div class="col-auto border"><a href="#">Добавить карту</a></div>
                 </div>
               </div>
             </div>
             <!--Most popular-->
             <div class="col-3">
-              <div class="widget p-3">
+              <div class="widget p-4">
                 <div class="row">
-                  <div class="h5">Избранные товары</div>
-                  <div class="d-flex">
-                    <div class="">Всего</div>
-                    <div class="ms-2">32 товара</div>
-                  </div>
+                  <div class="row">Ваша карта</div>
+                  <div class="col border"><i class="bi bi-credit-card"></i></div>
+                  <div class="col-auto border">7777 7777 7777 7777</div>
                 </div>
                 <div class="row mt-4">
-                  <div class="col-auto"><a href="#">Посмотреть все</a></div>
+                  <div class="col-auto border"><a href="#">Добавить карту</a></div>
                 </div>
               </div>
             </div>
@@ -279,11 +275,17 @@
             <div class="col-6">
               <div class="widget p-4">
                 <div class="row">
-                  <div class="row">Ваши покупки</div>
+                  <div class="row h4">Ваши покупки</div>
                 </div>
-                <div class="row mt-4">
-                  <div class="col-auto border"><a href="#">....</a></div>
-                  <div class="col-auto border"><a href="#">....</a></div>
+                <div class="d-flex justify-content-start">
+                  <div class="">21.10.2023</div>
+                  <div class="ms-5">Товаров: 5</div>
+                  <div class="ms-5">На сумму: 2321 &#8381;</div>
+                </div>
+                <div class="d-flex justify-content-start">
+                  <div class="">11.11.2023</div>
+                  <div class="ms-5">Товаров: 1</div>
+                  <div class="ms-5">На сумму: 245 &#8381;</div>
                 </div>
               </div>
             </div>
@@ -307,6 +309,60 @@
       <!--End cabinet content-->
     </div>
   </div>
+  <!--Footer start-->
+  <div class="container-fluid bg-secondary mt-5">
+    <div class="container">
+      <footer class="py-5">
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column menu1">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column menu1">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column menu1">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+              <h5>Subscribe to our newsletter</h5>
+              <p>Monthly digest of what's new and exciting from us.</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                <button class="btn btn-primary" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <!--Footer end-->
   <!--End Desktop-->
     
   <script src="static/js/popper.min.js"></script>

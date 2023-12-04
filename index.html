@@ -38,40 +38,40 @@
     </aside>
     <!--End search modal-->
     <!--Off Canvas-->
-    <aside class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <aside class="offcanvas offcanvas-start right-menu" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
       <div class="offcanvas-header">
         <h5 class="offcanvas-title" id="offcanvasExampleLabel">Catalog</h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
-        <div class="row">
+        <div class="row pt-2">
           <div class="col">
-            <a href="#">First catalog item</a>
+            <a href="#"><i class="bi bi-caret-right pe-2"></i> Сантехника</a>
           </div>
         </div>
-        <div class="row">
+        <div class="row pt-2">
           <div class="col">
-            <a href="#">Second catalog item</a>
+            <a href="#"> <i class="bi bi-caret-right pe-2"></i> Обои</a>
           </div>
         </div>
-        <div class="row">
+        <div class="row pt-2">
           <div class="col">
-            <a href="#">Third catalog item</a>
+            <a href="#"><i class="bi bi-caret-right pe-2"></i> Ванны</a>
           </div>
         </div>
-        <div class="row">
+        <div class="row pt-2">
           <div class="col">
-            <a href="#">Fourth catalog item</a>
+            <a href="#"><i class="bi bi-caret-right pe-2"></i> Потолочная плитка</a>
           </div>
         </div>
-        <div class="row">
+        <div class="row pt-2">
           <div class="col">
-            <a href="#">Fifth catalog item</a>
+            <a href="#"><i class="bi bi-caret-right pe-2"></i> Линолеум</a>
           </div>
         </div>
-        <div class="row">
+        <div class="row pt-2">
           <div class="col">
-            <a href="#">Sixth catalog item</a>
+            <a href="#"><i class="bi bi-paint-bucket pe-2"></i> Краски</a>
           </div>
         </div>
       </div>
@@ -356,70 +356,99 @@
 
     <!--Computer-->
     <div class="container-fluid d-none d-md-block p-0">
-      <ul class="nav flex-column bg-dark" style="background-image: url('media/run.jpg');">
-        <!--Top line of links-->
-        <li class="nav-item">
-          <ul class="nav">
-            <li class="nav-link menu1">
-              <a href="#">&#8226; One</a>
-            </li>
-            <li class="nav-link menu1">
-              <a href="#">&#8226; Two</a>
-            </li>
-            <li class="nav-link menu1">
-              <a href="#">&#8226; Three</a>
-            </li>
-          </ul>
-        </li>
-        <!--Middle navbar-->
-        <li class="nav-item">
-          <div class="container-fluid p-1">
-            <div class="row mx-2">
-              <!--Off canvas button-->
-              <div class="col-md-auto text-light">
-                <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                  <i class="bi bi-list"></i>
-                </button>
-              </div>
-              <div class="col">
-                <form>
-                  <div class="form-group has-search opacity-50">
-                      <span class="form-control-feedback">
-                          <i class="bi bi-search"></i>
-                      </span>
-                      <input type="text" name="query" class="form-control rounded-pill" placeholder="Поиск" value="">
-                  </div>
-                </form>
-              </div>
-              <div class="col-md-auto">
-                <div class="container">
-                  <div class="row menu1">
-                    <div class="col">
-                      <a href="#" data-bs-toggle="tooltip" data-bs-title="Cabinet"><i class="bi bi-person-circle" style="font-size: 1.5rem;"></i></a>
+      <ul class="nav flex-column bg-dark menu-background">
+        <div class="container-xl">
+          <!--Top line of links-->
+          <li class="nav-item">
+            <ul class="nav">
+              <li class="nav-link menu1 ps-0">
+                <a href="#"><i class="bi bi-geo-alt"></i> Братск</a>
+              </li>
+              <li class="nav-link menu1">
+                <a href="#">&#8226; Two</a>
+              </li>
+              <li class="nav-link menu1">
+                <a href="#">&#8226; Three</a>
+              </li>
+            </ul>
+          </li>
+          <!--Middle navbar-->
+          <li class="nav-item">
+            <div class="container-fluid py-2 px-0">
+              <div class="row pe-2 align-items-center">
+                <!--Logo-->
+                <div class="col-md-auto text-light logo">
+                  <a href="#">
+                    <h2>Мозаика</h2>
+                  </a>
+                </div>
+                <!--Off canvas button-->
+                <div class="col-md-auto">
+                  <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    <i class="bi bi-list"></i>
+                  </button>
+                </div>
+                <div class="col">
+                  <form>
+                    <div class="form-group has-search">
+                      <!--
+                        <span class="form-control-feedback">
+                            <i class="bi bi-search"></i>
+                        </span>
+                      -->
+                        <input type="text" name="query" class="form-control rounded-9" placeholder="Нати на сайте" value="">
                     </div>
-                    <div class="col">
-                      <a href="#" data-bs-toggle="tooltip" data-bs-title="Your cart"><i class="bi bi-bag" style="font-size: 1.5rem;"></i></a>
+                  </form>
+                </div>
+                <div class="col-auto">
+                    <div class="row menu1 px-0 end-position">
+                      <div class="col">
+                        <a href="#" class="" data-bs-toggle="tooltip" data-bs-title="Cabinet">
+                          <div class="row text-center">
+                            <i class="bi bi-person-circle"></i>
+                          </div>
+                          <div class="row text-center">
+                            <span>Профиль</span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col">
+                        <a href="#" data-bs-toggle="tooltip" data-bs-title="Your cart">
+                          <div class="row text-center">
+                            <i class="bi bi-bag"></i>
+                          </div>
+                          <div class="row text-center">
+                            <span>Корзина</span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col">
+                        <a href="#" data-bs-toggle="tooltip" data-bs-title="Your likes">
+                          <div class="row text-center">
+                            <i class="bi bi-heart"></i>
+                          </div>
+                          <div class="row text-center">
+                            Избранное
+                          </div>
+                        </a>
+                      </div>
                     </div>
-                    <div class="col">
-                      <a href="#" data-bs-toggle="tooltip" data-bs-title="Your likes"><i class="bi bi-heart" style="font-size: 1.5rem;"></i></a>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </li>
-        <!--Bottom nav element-->
-        <li class="nav-item">
-          <div class="container-fluid text-light">
-            <div class="p-2">
-              Other nav element
+          </li>
+          <!--Bottom nav element-->
+          <li class="nav-item">
+            <div class="container-fluid text-light px-0">
+              <div class="">
+                Other nav element
+              </div>
             </div>
+          </li>
           </div>
-        </li>
       </ul>
       <!--Carousel-->
-      <div class="container-fluid mx-1 my-2">
+      <div class="container-xl py-4">
         <div id="carouselExampleAutoplaying" class="carousel slide carousel-desktop" data-bs-ride="carousel">
           <div class="carousel-inner rounded-3">
             <div class="carousel-item active">
@@ -444,13 +473,15 @@
       </div>
       <!--End carousel-->
       <!--Products-->
-      <div class="container-fluid mx-1">
+      <div class="container-xl">
         <div class="row g-1">
-          <div class="col-2">
+          <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-3 col-sm-6">
               <div class="card border-0 p-1 card-content">
                 <div class="overlay">
                   <a href="#" class="product-like-container">
-                    <b><i class="bi bi-heart"></i></b>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" class="bi bi-heart-fill" viewBox="-1 -1 18 18">
+                      <path class="bold-icon" fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+                    </svg>
                   </a>
                 </div>
                 <div class="row">
@@ -480,7 +511,7 @@
                 </div>
                 <div class="d-flex text-secondary justify-content-start p-1">
                   <div class="stars">
-                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill star"></i>
                     4.7
                   </div>
                   <div class="stars">
@@ -489,7 +520,52 @@
                 </div>
               </div>
           </div>
-          <div class="col-2">
+          <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-3 col-sm-6">
+            <div class="card border-0 p-1 card-content">
+              <div class="overlay">
+                <a href="#" class="product-like-container">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-heart-fill" viewBox="-1 -1 18 18">
+                    <path class="bold-icon-active" fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+                  </svg>
+                </a>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <a href="#" class="stretched-link">
+                    <img src="/media/oboi.webp" class="card-img-top product-image" alt="...">
+                  </a>
+                </div>
+              </div>
+              <div class="row p-1 m-0">
+                <div class="col-12">
+                  <div class="d-flex justyfy-content-start">
+                    <b class="pe-1">346 &#8381;</b>
+                    <s class="text-secondary"><small>450 &#8381;</small></s>
+                  </div>
+                </div>
+              </div>
+              <div class="row p-1 mt-0">
+                <div class="col-12">
+                  <div class="text-truncate product-name">Краска Текс латексная 1,5л</div>
+                </div>
+              </div>
+              <div class="row p-1">
+                <div class="col-12">
+                  <div class="text-truncate product-description"><small>Some quick example text to build on the card title and make up the bulk of the card's content.</small></div>
+                </div>
+              </div>
+              <div class="d-flex text-secondary justify-content-start p-1">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  4.7
+                </div>
+                <div class="stars">
+                  &#x2022; 3224 оценок
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-3 col-sm-6">
             <div class="card border-0 p-1 card-content">
               <div class="overlay">
                 <a href="#" class="product-like-container">
@@ -532,8 +608,8 @@
               </div>
             </div>
           </div>
-          <div class="col-2">
-            <div class="card border-0 p-1">
+          <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-3 col-sm-6">
+            <div class="card border-0 p-1 card-content">
               <div class="overlay">
                 <a href="#" class="product-like-container">
                   <b><i class="bi bi-heart"></i></b>
@@ -575,8 +651,8 @@
               </div>
             </div>
           </div>
-          <div class="col-2">
-            <div class="card border-0 p-1">
+          <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-3 col-sm-6">
+            <div class="card border-0 p-1 card-content">
               <div class="overlay">
                 <a href="#" class="product-like-container">
                   <b><i class="bi bi-heart"></i></b>
@@ -618,8 +694,8 @@
               </div>
             </div>
           </div>
-          <div class="col-2">
-            <div class="card border-0 p-1">
+          <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-3 col-sm-6">
+            <div class="card border-0 p-1 card-content">
               <div class="overlay">
                 <a href="#" class="product-like-container">
                   <b><i class="bi bi-heart"></i></b>
@@ -661,8 +737,8 @@
               </div>
             </div>
           </div>
-          <div class="col-2">
-            <div class="card border-0 p-1">
+          <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-3 col-sm-6">
+            <div class="card border-0 p-1 card-content">
               <div class="overlay">
                 <a href="#" class="product-like-container">
                   <b><i class="bi bi-heart"></i></b>
@@ -704,51 +780,8 @@
               </div>
             </div>
           </div>
-          <div class="col-2">
-            <div class="card border-0 p-1">
-              <div class="overlay">
-                <a href="#" class="product-like-container">
-                  <b><i class="bi bi-heart"></i></b>
-                </a>
-              </div>
-              <div class="row">
-                <div class="col-12">
-                  <a href="#" class="stretched-link">
-                    <img src="/media/oboi.webp" class="card-img-top product-image" alt="...">
-                  </a>
-                </div>
-              </div>
-              <div class="row p-1 m-0">
-                <div class="col-12">
-                  <div class="d-flex justyfy-content-start">
-                    <b class="pe-1">346 &#8381;</b>
-                    <s class="text-secondary"><small>450 &#8381;</small></s>
-                  </div>
-                </div>
-              </div>
-              <div class="row p-1 mt-0">
-                <div class="col-12">
-                  <div class="text-truncate product-name">Краска Текс латексная 1,5л</div>
-                </div>
-              </div>
-              <div class="row p-1">
-                <div class="col-12">
-                  <div class="text-truncate product-description"><small>Some quick example text to build on the card title and make up the bulk of the card's content.</small></div>
-                </div>
-              </div>
-              <div class="d-flex text-secondary justify-content-start p-1">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i>
-                  4.7
-                </div>
-                <div class="stars">
-                  &#x2022; 3224 оценок
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-2">
-            <div class="card border-0 p-1">
+          <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-3 col-sm-6">
+            <div class="card border-0 p-1 card-content">
               <div class="overlay">
                 <a href="#" class="product-like-container">
                   <b><i class="bi bi-heart"></i></b>

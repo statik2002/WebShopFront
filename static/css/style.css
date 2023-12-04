@@ -4,6 +4,10 @@
     /*font-family: 'Roboto', sans-serif;*/
 }
 
+.menu-background {
+    background: linear-gradient(to right, rgb(26, 158, 0), rgb(58, 184, 27));
+}
+
 h2 {
     font-weight: 700;
 }
@@ -48,11 +52,8 @@ h2 {
 
 .product-like-container {
     position: absolute;
-    cursor: pointer;
-    left: 85%;
-    top: 2%;
-    font-size: 1.3rem;
-    color: black;
+    left: 82%;
+    top: 5%;
 }
 
 .product-like-container-active {
@@ -106,6 +107,10 @@ h2 {
     font-size: 0.7rem;
 }
 
+.star {
+    color: gold;
+}
+
 .product-stars {
     font-size: 1.0rem;
 }
@@ -122,6 +127,8 @@ h2 {
     padding-left: 2.375rem;
     border: none;
     background-color: #F5F5F5;
+    border-radius: 0.5rem;
+    height: 3rem;
 }
 
 .has-search .form-control-feedback {
@@ -160,12 +167,13 @@ h2 {
 }
 
 .menu1 {
-    color: white;
+    color: rgba(231, 231, 231, 0.5);
 }
 
 .menu1 a:link {
-    color: white;
+    color: rgba(231, 231, 231, 0.5);
     text-decoration: none;
+    font-size: 14px;
 }
 
 .menu1 a:visited {
@@ -175,7 +183,27 @@ h2 {
 
 .menu1 a:hover {
     color: white;
-    text-decoration: underline;
+    text-decoration: none;
+}
+
+.logo {
+    color: white;
+}
+
+.logo a:link {
+    color: white;
+    text-decoration: none;
+}
+
+.logo a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.logo a:hover {
+    color: white;
+    text-decoration: underline dotted;
+    text-decoration-thickness: 1px;
 }
 
 .card-content {
@@ -219,4 +247,48 @@ h2 {
     text-align: center;
     display: table-cell;
     vertical-align: middle;
+}
+
+.bold-icon {
+    stroke: rgb(58, 58, 58);
+    stroke-width: 1px;
+    stroke-linejoin: "round";
+    paint-order: fill;
+    fill: rgba(231, 231, 231, 0.623);
+    transform: scale(0.9);
+}
+
+.bold-icon-active {
+    fill: rgba(255, 0, 0, 0.623);
+    stroke: white;
+}
+
+
+.right-menu {
+    background: linear-gradient(to right, rgb(26, 158, 0), rgb(58, 184, 27));
+}
+
+.right-menu h5 {
+    color: white;
+}
+
+.right-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.right-menu a:active {
+    color: white;
+    text-decoration: none;
+}
+
+.right-menu a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.right-menu a:hover {
+    color: white;
+    text-decoration: underline dotted;
+    text-decoration-thickness: 1px;
 }
