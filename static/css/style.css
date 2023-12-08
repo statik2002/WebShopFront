@@ -116,7 +116,19 @@ h2 {
 }
 
 .bottom-icons {
-    font-size: 1.0rem;
+    font-size: 2.0em;
+}
+
+.bottom-icons a:link {
+    color: #aaa;
+}
+
+.bottom-icons a:visited {
+    color: #aaa;
+}
+
+.bottom-icons a:active {
+    color: green;
 }
 
 .search-line-icon {
@@ -187,24 +199,34 @@ h2 {
 }
 
 .logo {
-    color: white;
+    -webkit-text-stroke:1px rgb(255, 255, 255);
+    color: rgb(255, 208, 0);
 }
 
 .logo a:link {
-    color: white;
+    -webkit-text-stroke:1px rgb(255, 255, 255);
+    color: rgb(255, 208, 0);
     text-decoration: none;
 }
 
 .logo a:visited {
-    color: white;
     text-decoration: none;
 }
 
 .logo a:hover {
-    color: white;
     text-decoration: underline dotted;
     text-decoration-thickness: 1px;
 }
+
+.logoM {
+    color: red;
+}
+
+.logo-end {
+    color: green;
+    font-size: 0.8em;
+}
+
 
 .card-content {
     border-radius: 15px;
