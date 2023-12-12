@@ -178,6 +178,10 @@ h2 {
     height: 200px;
 }
 
+.carousel {
+    transition: transform .5s ease;
+}
+
 .menu1 {
     color: rgba(231, 231, 231, 0.5);
 }
