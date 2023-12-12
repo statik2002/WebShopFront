@@ -111,6 +111,10 @@ h2 {
     color: gold;
 }
 
+.star-no {
+    color: rgb(187, 187, 187);
+}
+
 .product-stars {
     font-size: 1.0rem;
 }
@@ -317,4 +321,14 @@ h2 {
     color: white;
     text-decoration: underline dotted;
     text-decoration-thickness: 1px;
+}
+
+
+.card {
+    font-size: 0.8rem;
+}
+
+.datetime {
+    font-size: 0.6rem;
+    color: #999999;
 }
