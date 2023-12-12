@@ -79,7 +79,7 @@
     <!--end Off Canvas-->
 
     <!--Telephone-->
-    <div class="container p-0 d-md-none">
+    <div class="container p-0 d-sm-none">
       <!--Top Nav fixed-->
       <div class="container-fluid py-2 menu-background">
           <div class="d-flex align-content-center align-items-center">
@@ -323,8 +323,12 @@
       </div>
 
       <!--Bottom nav fixed-->
-      <div class="container-fluid pt-2">
+      <div class="container-fluid pt-5">
         <div class="container fixed-bottom bg-light border">
+          <div class="d-flex p-2 gap-2">
+            <button type="button" class="btn btn-outline-success w-50">Купить сейчас</button>
+            <button type="button" class="btn btn-success w-50">В корзину</button>
+          </div>
           <div class="row bottom-icons text-center">
             <a href="#" class="col">
               <i class="bi bi-house-fill"></i>
@@ -332,11 +336,11 @@
             <a href="#" class="col">
               <i class="bi bi-stack"></i>
             </a>
-            <a href="#" class="col">
-              <i class="bi bi-cart-fill"></i>
+            <a href="#" class="col button">
+              <i class="bi bi-cart-fill position-relative"><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size: 0.4em;">23</span></i>
             </a>
             <a href="#" class="col">
-              <i class="bi bi-heart-fill"></i>
+              <i class="bi bi-heart-fill position-relative"><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size: 0.4em;">143</span></i>
             </a>
             <a href="#" class="col">
               <i class="bi bi-person-fill"></i>
@@ -344,12 +348,14 @@
           </div>
         </div>
       </div>
+      <!--End bottom navbar-->
+      
       <!--End Telephone-->
     </div>
 
 
     <!--Computer-->
-    <div class="container-fluid d-none d-md-block p-0">
+    <div class="container-fluid d-none d-sm-block p-0">
       <ul class="nav flex-column bg-dark menu-background">
         <div class="container-xl">
           <!--Top line of links-->
@@ -821,8 +827,34 @@
       </div>
       <!--End Products-->
 
+      <!--Bottom nav fixed-->
+      <div class="container-fluid pt-3 d-lg-none fixed-bottom bg-light border">
+          <div class="d-flex pb-3 gap-2">
+            <button type="button" class="btn btn-outline-success w-50">Купить сейчас</button>
+            <button type="button" class="btn btn-success w-50">В корзину</button>
+          </div>
+          <div class="row bottom-icons text-center">
+            <a href="#" class="col">
+              <i class="bi bi-house-fill"></i>
+            </a>
+            <a href="#" class="col">
+              <i class="bi bi-stack"></i>
+            </a>
+            <a href="#" class="col button">
+              <i class="bi bi-cart-fill position-relative"><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size: 0.4em;">23</span></i>
+            </a>
+            <a href="#" class="col">
+              <i class="bi bi-heart-fill position-relative"><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size: 0.4em;">143</span></i>
+            </a>
+            <a href="#" class="col">
+              <i class="bi bi-person-fill"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
       <!--Footer start-->
-      <div class="container-fluid bg-secondary mt-3">
+      <div class="container-fluid bg-secondary mt-3 d-none d-sm-block">
         <div class="container">
           <footer class="py-5">
             <div class="row">
