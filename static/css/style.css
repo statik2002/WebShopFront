@@ -254,7 +254,7 @@ h2 {
 }
 
 .breadcrumb-icon {
-    font-size: 21px;
+    font-size: 1.3em;
 }
 
 .widget-area {
@@ -293,6 +293,10 @@ h2 {
     stroke: white;
 }
 
+.bold-icon-carousel {
+    fill: rgba(112, 112, 112, 0.623);
+    stroke: rgb(255, 255, 255);
+}
 
 .right-menu {
     background: linear-gradient(to right, rgb(26, 158, 0), rgb(58, 184, 27));
