@@ -290,16 +290,27 @@ h2 {
 }
 
 .circle {
-    width: 100px;
-    height: 100px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    border-radius: 50px;
+    width: 8vw;
+    height: 8vw;
+    -webkit-border-radius: 8vw;
+    -moz-border-radius: 8vw;
+    border-radius: 8vw;
     border: 5px solid;
-    color: #fdeef9;
+    color: rgba(54, 131, 10, 0.3);
     text-align: center;
     display: table-cell;
     vertical-align: middle;
+}
+
+.icon-at-circle {
+    font-size: 4vw;
+    color: green;
+}
+
+.text-at-circle {
+    font-size: 3vw;
+    color: green;
+    font-weight: 700;
 }
 
 .bold-icon {
@@ -392,4 +403,24 @@ h2 {
 .datetime {
     font-size: 0.6rem;
     color: #999999;
+}
+
+.cabinet-top-menu {
+    font-size: 0.8rem;
+}
+
+.cabinet-top-menu a {
+    color: green;
+}
+
+.cabinet-top-menu a:link {
+    color: green;
+}
+
+.cabinet-top-menu a:visited {
+    color: green;
+}
+
+.cabinet-top-menu a:hover {
+    color: red;
 }
