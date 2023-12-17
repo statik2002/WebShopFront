@@ -441,3 +441,27 @@ h2 {
     overflow: hidden;
     object-position: center;
 }
+
+#carouselColorSlider {
+    @media (min-width: 576px) {
+        .carousel-inner {
+            display: flex;
+            overflow: hidden;
+        }
+        .carousel-item {
+            margin-right: 0;
+            display: block;
+        }
+        .carousel-inner{
+            padding: 1em;
+        }
+        .carousel-control-prev, .carousel-control-next{
+            background-color: #888888;
+            width: 5vh;
+            height: 5vh;
+            border-radius: 50%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
